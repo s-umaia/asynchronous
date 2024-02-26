@@ -5,15 +5,14 @@
 }
 body{
     background-image: linear-gradient(to bottom, rgba(38, 38, 48, 0.5), rgba(0, 0, 0, 0.5)), url(https://i.pinimg.com/originals/d2/be/25/d2be2532fde6f85e4ef48b040236d0bb.jpg);
-
 }
+
 h1{
-    margin-top: 10rem;
+    color: white;
+    margin-top: 4rem;
     text-align: center;
     font-size: 30px;
-    font-family: Georgia, 'Times New Roman', Times, serif; 
-
-    
+    font-family: Georgia, 'Times New Roman', Times, serif;    
 }
 
 .fetched-data{
@@ -21,14 +20,17 @@ h1{
     grid-template-columns: 1fr 1fr 1fr;
     width:1000px;
     gap: 10px;
-    margin: 100px auto;
+    margin: 10px auto;
+    height: 70vh;
+    overflow: auto;
 }
 
 
 .todo-item{
     background-color: rgb(124, 125, 126);
+    border-radius: 5px;
     padding:10px;
-    color:rgb(0, 0, 0);
+    color:rgb(255, 255, 255);
     display: grid;
     align-self: center; /*are we sure about this?*/
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
@@ -38,14 +40,17 @@ h1{
     background-color: rgb(32, 46, 59); 
     border: 2px solid rgba(255, 255, 255, 0);
 }
-
+.checkbox{
+    width: 15px;
+    height: 15px;
+}
 .clock{
-    /* position: sticky;
-    top: 20px; */
+    margin-top: 0.5rem;
     font-size: 20px;
     text-align: center;
     font-weight: bold ;
-    color: rgb(11, 11, 11);
+    color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 768px) {
